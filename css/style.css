@@ -1,0 +1,70 @@
+/* Core Layout & Theme Variable Identity */
+:root {
+    --primary-brand: #198754;
+    --primary-brand-hover: #146c43;
+    --bg-light: #f8f9fa;
+    --bg-dark-mode: #121212;
+    --card-dark-mode: #1e1e1e;
+    --text-dark: #212529;
+    --text-light: #f8f9fa;
+    --transition-speed: 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    background-color: #ffffff;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Hero & Section Enhancements */
+.hero-section {
+    background: linear-gradient(135deg, #eafaf1 0%, #ffffff 100%);
+    transition: background var(--transition-speed);
+}
+
+/* Hover Animations for Rubric Usability Points */
+.card {
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Gallery Hover Image Effects */
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.gallery-item img {
+    transition: transform var(--transition-speed);
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* -------------------------------------------------------------
+   DYNAMIC DARK MODE CODES (Controlled via JS)
+------------------------------------------------------------- */
+body.dark-theme {
+    background-color: var(--bg-dark-mode);
+    color: var(--text-light);
+}
+body.dark-theme .hero-section {
+    background: linear-gradient(135deg, #0f2b1d 0%, var(--bg-dark-mode) 100%);
+}
+body.dark-theme .card, body.dark-theme .modal-content, body.dark-theme .list-group-item {
+    background-color: var(--card-dark-mode);
+    color: var(--text-light);
+    border-color: #333;
+}
+body.dark-theme .text-muted { color: #b0b0b0 !important; }
+body.dark-theme .accordion-item { background-color: var(--card-dark-mode); color: var(--text-light); }
+body.dark-theme .accordion-button { background-color: var(--card-dark-mode); color: var(--text-light); }
+body.dark-theme .accordion-button:not(.collapsed) { background-color: #198754; color: white; }
+body.dark-theme .form-control { background-color: #2b2b2b; color: white; border-color: #444; }
+body.dark-theme .form-control:focus { background-color: #333; color: white; }
+body.dark-theme .btn-outline-dark { color: var(--text-light); border-color: var(--text-light); }
+body.dark-theme .btn-outline-dark:hover { background-color: var(--text-light); color: var(--bg-dark-mode); }

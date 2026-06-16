@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech Hub | Registration & Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/imports/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="index.html"><i class="fa-solid fa-graduation-cap me-2"></i>EduTech Hub</a>
+            <button class="btn btn-outline-light me-2 ms-auto order-lg-last" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mainNavbar">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" style="max-width: 600px;">
+        <div class="card p-4 shadow-sm">
+            <h2 class="fw-bold text-success text-center mb-4">Registration Gateway</h2>
+            <form id="enrollmentForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                    <div class="invalid-feedback">Operational error: System requires identification values.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="emailAddr" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddr" required>
+                    <div class="invalid-feedback">Operational error: Provide a valid communication address syntax.</div>
+                </div>
+                <button type="submit" class="btn btn-success w-100 py-2">Submit Secure Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5"><div class="container text-center"><p>&copy; 2026 EduTech Hub Platform.</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/imports/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
