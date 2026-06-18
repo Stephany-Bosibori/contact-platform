@@ -63,7 +63,7 @@ function initPortfolioFiltering() {
 }
 
 /**
- * INTERACTIVE FEATURE 3: Real-time Form Validation Handler
+ * INTERACTIVE FEATURE 3: Real-time Form Validation Handlers
  */
 function initFormValidation() {
     const registrationForm = document.getElementById('enrollmentForm');
