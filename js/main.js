@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * INTERACTIVE FEATURE 1: Dark / Light Mode Toggle Switch (With Persistence)
+ *  INTERACTIVE FEATURE 1: Dark / Light Mode Toggle Switch (With Persistence)
  */
 function initThemeControl() {
     const themeToggleBtn = document.getElementById('theme-toggle');
