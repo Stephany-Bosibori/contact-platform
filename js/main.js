@@ -36,7 +36,7 @@ function transformToggleIcon(iconElement, isDark) {
 }
 
 /**
- * INTERACTIVE  FEATURE 2: Dynamic Live Category Card Filterings
+ *  INTERACTIVE  FEATURE 2: Dynamic Live Category Card Filterings
  */
 function initPortfolioFiltering() {
     const filterButtons = document.querySelectorAll('.filter-btn');
