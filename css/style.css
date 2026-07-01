@@ -10,12 +10,13 @@
     --transition-speed: 0.3s ease;
 }
 
+/* Apply a soft, cozy background and a rounded font */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-dark);
-    background-color: #ffffff;
-    transition: background-color var(--transition-speed), color var(--transition-speed);
+    background-color: #1a1625; /* Soft, deep twilight purple instead of harsh black */
+    color: #fff0f5; /* Lavender blush white for readable, soft text */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+
 
 /* Hero & Section Enhancements */
 .hero-section {
