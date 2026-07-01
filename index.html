@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTech Hub | Home Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/imports/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3 border-bottom border-secondary border-opacity-25">
         <div class="container">
-            <a class="navbar-brand fw-bold text-success" href="index.html"><i class="fa-solid fa-graduation-cap me-2"></i>EduTech Hub</a>
-            <button class="btn btn-outline-light me-2 ms-auto order-lg-last" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand fw-extrabold text-success fs-4 tracking-tight d-flex align-items-center" href="index.html">
+                <i class="fa-solid fa-graduation-cap me-2 fs-3 text-success"></i>EduTech <span class="text-white ms-1 fw-light">Hub</span>
+            </a>
+            <button class="btn btn-outline-success border-opacity-50 text-white me-2 ms-auto order-lg-last rounded-circle px-2" id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="navbar-toggler border-0 unique-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mainNavbar">
-                <div class="offcanvas-header"><h5 class="offcanvas-title text-success">Navigation </h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button></div>
+                <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
+                    <h5 class="offcanvas-title text-success fw-bold">Navigation Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Insights</a></li>
-                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-2">
+                        <li class="nav-item"><a class="nav-link px-3 active fw-semibold text-success bg-success bg-opacity-10 rounded-pill" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-medium text-white-50" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-medium text-white-50" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-medium text-white-50" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-medium text-white-50" href="blog.html">Insights</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 fw-medium text-white-50" href="faq.html">FAQs</a></li>
+                        <li class="nav-item ms-lg-2"><a class="btn btn-success text-white fw-bold px-4 rounded-pill shadow-sm" href="contact.html">Join Portal</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero-section py-5 text-center text-lg-start">
+    <header class="hero-section py-5 bg-light border-bottom">
         <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
                     <h1 class="display-4 fw-bold text-dark mb-3">Accelerate Your Engineering Career Path</h1>
-                    <p class="lead text-muted mb-4">Gain industry-grade competency in backend structural implementation, algorithm optimization architectures, and full stack interface developments.</p>
-                    <a href="courses.html" class="btn btn-success btn-lg px-4">Explore Core Modules</a>
+                    <p class="lead text-secondary mb-4 lh-lg">Gain industry-grade competency in backend structural implementation, algorithm optimization architectures, and full stack interface developments.</p>
+                    <a href="courses.html" class="btn btn-success btn-lg px-5 py-3 rounded-pill shadow-sm fw-bold">Explore Core Modules</a>
                 </div>
                 <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <i class="fa-solid fa-laptop-code text-success" style="font-size: 10rem;"></i>
+                    <div class="p-5 bg-white shadow rounded-circle d-inline-block border border-success border-opacity-10">
+                        <i class="fa-solid fa-laptop-code text-success" style="font-size: 8rem;"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <footer class="bg-dark text-light py-4 mt-5"><div class="container text-center"><p>&copy; 2026 EduTech Hub Platform. Built with professional responsive standards.</p></div></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/imports/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
